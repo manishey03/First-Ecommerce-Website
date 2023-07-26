@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    border-color:#efefef;
+}
+.logo{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+   color: white;
+}
+span:hover{
+   color:#2183a2 ;
+}
+.logo img{
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color:#333333;
+    z-index: 1000;
+
+}
+.nav-list{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.nav-list li {
+    list-style: none;
+    padding: 23px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+}
+.nav-list li a:hover{
+    color:#2183a2;
+}
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+
+}
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid grey;
+
+}
+
+.btn{
+    padding: 8px 15px;
+    margin: 5px 0;
+    border: 2px solid grey;
+    background: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btn:hover{
+   color: #2183a2;
+}
+.btn-sm{
+    padding:4px 8px;
+    vertical-align: middle;
+    font-weight: 500;
+
+}
+/* NavBar ends */
+
+
+.container{
+    width: 96%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+.hero{
+    max-width: 300rem;
+    height: 40rem;
+    background: url(/Website/Images/photo.jpg) no-repeat center center/ cover;
+    margin: 5rem auto;
+}
+header{
+    width: 100%;
+    height: 5rem;
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    z-index: 333;
+}
+main{
+    width: 80%;
+    max-width: 85rem;
+    background-color: rgb(145, 190, 173);
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+}
+main h2{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+main p{
+    color: rgb(56, 48, 45);
+    margin: 1rem 0;
+}
+main .content h4{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: darkgrey;
+    margin: 2rem 0;
+}
+main .content .content-img-container{
+    width: 100%;
+    height: 35rem;
+    background: url(../Images/bg-bonsai1\ \(2\).png)no-repeat center center/cover;
+    
+}
+.blog h4{
+    font-size: 45px;
+}
+.blog p{
+    font-size: 25px;
+    margin-top: 2rem;
+}
+.blog{
+    margin-top: 7rem;
+}
+.content p{
+    font-size: 22px;
+}
+.article{
+    width: 85%;
+    margin: 15px;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px black;
+    transition: .4s;
+    background: rgb(206, 200, 195);
+    display: flex;
+}
+.article .article-heading{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.article-heading h5{
+    font-size: 10rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    position: relative;
+    color: brown;
+}
+.article-heading h6{
+    font-size: 4rem;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: grey;
+
+}
+.article .card h4{
+    margin-top: 20px;
+    margin-left: 1px;
+    font-size: 29px;
+    background-color:rgb(156, 155, 155);
+}
+.article .card p{
+    font-size: 28px;
+    color: rgb(75, 30, 8);
+    line-height: 1.5;
+    padding: 20px;
+    position: relative;
+    margin: 0 auto;
+}
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+.article .card{
+        flex: 1;
+        margin: 50px 20px;
+        box-shadow: rgb(224, 169, 124);
+        font-size: 25px;
+        
+}
+.article .card img{
+    width: 100%;
+    height: auto;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+    gap: 5rem;
+}
+.cards .card-container{
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.cards .card-container .img-holder{
+    max-width: 100%;
+    height: 24rem;
+    background: url(image/photo.jpg)no-repeat center center/cover;
+    position: relative;
+}
+.cards .card-container.two .img-holder{
+    background: url(image/photos.jpg)no-repeat center center/cover;
+
+}
+
+.content .card h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    background-color: rgb(177, 136, 107);
+    font-size: 20px;
+}
+.content .card p{
+    font-size: 18px;
+    color: rgb(75, 30, 8);
+    line-height: 1.5;
+    padding: 20px;
+}
+ div {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+ 
+ 
+      /*------ footer section------- */
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+  }
+  .footer div{
+    text-align: center;
+  }
+ .col-2{
+    flex-grow: 2;
+ }
+ .footer div h3{
+    font-weight: 300;
+    margin-bottom:30px;
+    letter-spacing: 1px;
+ }
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom:10px;
+ }
+ form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline:none;
+    border: none;
+ }
+ form button{
+    background:transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius: 30px;
+    padding:10px 30px;
+    font-size: 15px;
+
+ /* -------Footer starts----- */
+ 
+ }
+ .footer{
+   margin-top: 150px;
+   width: 100%;
+   padding: 100px 15%;
+   background: #333;
+   color: #efefef;
+   display: flex;
+ }
+ .footer div{
+   text-align: center;
+ }
+.col-2{
+   flex-grow: 2;
+}
+.footer div h3{
+   font-weight: 300;
+   margin-bottom:30px;
+   letter-spacing: 1px;
+}
+.col-1 a{
+   display: block;
+   text-decoration: none;
+   color:#efefef;
+   margin-bottom:10px;
+}
+form input{
+   width: 400px;
+   height: 45px;
+   border-radius: 4px;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 40px;
+   outline:none;
+   border: none;
+}
+form button{
+   background:transparent;
+   border: 2px solid #fff;
+   color:#fff;
+   border-radius: 30px;
+   padding:10px 30px;
+   font-size: 15px;
+
+}
+.icons{
+    width: 25%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}

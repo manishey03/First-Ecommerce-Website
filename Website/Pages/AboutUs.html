@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/About.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <ul class="nav-list">
+            <div class="logo"><img src="../Images/leaf-fill.png"><span>JHAKKAS BONSAI</span></div>
+           <li><a href="../index.html">HOME</a></li>
+           <li><a href="../Pages/Product.html">PRODUCT</a></li>
+           <li><a href="../Pages/Blog.html">BLOG</a></li>
+           <li><a href="../Pages/Research.html">RESEARCH</a></li>
+           <li><a href="../Pages/AboutUs.html">ABOUTUS</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Meet Our Team</h1>
+    
+        <div class="container">
+            <div class="indicator">
+                <span class="btn"></span>  
+                <span class="btn"></span> 
+                <span class="btn"></span> 
+                <span class="btn"></span>     
+            </div>
+             <div class="meetourteam">
+              <div class="slide-row" id="slide">
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Name: Manisha K.C.<br>
+                           Address: Hemja,Pokhara<br>
+                           E-mail: manisha.kc.a22@icp.edu.np </p>
+                        <h3>Manisha</h3>
+                        <p>Leader</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="../Images/manisha.jpg">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Name: Priyanka Acharya<br>
+                           Address: Malepatan,Pokhara<br>
+                           E-mail: priyanka.acharya.a22@icp.edu.np </p>
+                         <h3>Priyanka</h3>    
+                        <p>Member</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="../Images/pinku.jpg">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Name: Bhumika K.C.<br>
+                           Address: Amarsingh Chowk, Pokhara<br>
+                           E-mail: bhumika.kc.a22@icp.edu.np
+                         
+                        </p>                 
+                        <h3>Bhumika</h3>
+                        <p>Member</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="../Images/bhumika.jpg">
+                    </div>
+                </div>
+                <div class="slide-col">
+                    <div class="user-text">
+                        <p>Name: Swostika Bastola<br>
+                           Address: Fhulbari, Pokhara<br>
+                           E-mail: swostika.bastola.a22@icp.edu.np 
+    
+                        </p>
+                        <h3>Swostika</h3>
+                        <p>Member</p>
+                    </div>
+                    <div class="user-img">
+                        <img src="../Images/swostika.jpg">
+                    </div>
+                </div>
+             </div>
+              </div>
+        </div>
+         
+     </div>
+    <div class="contain">
+        <div class="box">
+            <h3>Get in Touch</h3>
+            <div class="name">
+                <img src="../Images/user-line.png" >
+                <input type="text" placeholder="Name"
+                id="name">
+            </div>
+            <div class="email">
+                <img src="../Images/mail-line.png">
+                <input type="text" placeholder="Email"
+                id="email">
+            </div>
+            <div class="message-box">
+                <textarea id="msg" cols="30" rows="10"
+                placeholder="Message"></textarea>
+            </div>
+            <div class="button">
+                <button id="send" onclick="message()">Send</button>
+            </div>
+            <div class="message">
+                <div class="success" id="success">Your
+                    Message Has Been Successfully Sent.Thanks!
+                </div>
+                <div class="danger" id="danger">Fields Can't be Empty!</div>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+    
+        var btn  = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+  
+        btn[0].onclick = function(){
+            slide.style.transform= "translateX(0px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+          }
+          this.classList.add("active");
+      }
+        btn[1].onclick = function(){
+            slide.style.transform= "translateX(-800px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+          }
+          this.classList.add("active");
+          
+      }
+        btn[2].onclick = function(){
+            slide.style.transform= "translateX(-1600px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+          }
+          this.classList.add("active");
+      }
+        btn[3].onclick = function(){
+            slide.style.transform= "translateX(-2400px)";
+            for(i=0;i<4;i++){
+                btn[i].classList.remove("active");
+          }
+          this.classList.add("active");
+      }
+  
+   </script>
+<!----------- Footer section ----------->
+<div class="footer">
+    <div class="col-1">
+        <h3>USEFUL LINKS</h3>
+        <a href="../index.html">Home</a>
+        <a href="../Pages/Product.html">Product</a>
+        <a href="../Pages/Blog.html">Blog</a>
+        <a href="../Pages/Research.html">Research</a>
+        <a href="../Pages/AboutUs.html">About Us</a>
+    </div>
+    <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form>
+            <input type="email" placeholder="Your Email Address" required> 
+            <br>
+            <button type="submit">Order Now</button>
+        </form>
+    </div>
+    <div class="col-3">
+        <h3>CONTACT</h3>
+        <p>123, XYZ Road, BSK 3 <br>Pokhara, Newroad</p>
+        <div class="icons">
+          <img src="../Images/facebook-fill.png" alt="icon">
+          <img src="../Images/instagram-fill.png" alt="icon">
+          <img src="../Images/twitter-fill.png" alt="icon">
+          <img src="../Images/youtube-fill.png" alt="icon">
+
+        </div>
+        
+    </div>
+</div>
+
+
+
+    <!-- To link Java-------------------- -->
+    <script src="../Js/About.js"></script>
+    
+</body>
+</html>

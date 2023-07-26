@@ -1,0 +1,377 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    scroll-padding-top:2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --main-color: #fd4646;
+    --text-color:#171427;
+    --bg-color:#fff;
+}
+/* Navbar starts-------- */
+body{
+    background-color: #efefef;
+}
+.logo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span{
+   color: white;
+}
+span:hover{
+   color:#2183a2 ;
+}
+.logo img{
+    width: 20%;
+    border: 3px solid white;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    background-color:#333333;
+    z-index: 1000;
+
+}
+.nav-list{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.nav-list li {
+    list-style: none;
+    padding: 23px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color:white;
+}
+.nav-list li a:hover{
+    color:#2183a2;
+}
+
+.rightNav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+
+}
+#search{
+    padding: 5px;
+    font-size: 15px;
+    border: 2px solid grey;
+
+}
+
+.btn{
+    padding: 8px 15px;
+    margin: 5px 0;
+    border: 2px solid grey;
+    background: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btn:hover{
+   color: #2183a2;
+}
+.btn-sm{
+    padding:4px 8px;
+    vertical-align: middle;
+    font-weight: 500;
+
+}
+
+/* ----Navbar ends-------- */
+
+.shopcontainer{
+    background-color:#efefef;
+}
+img{
+    width:100%;
+}
+body{
+    color:var(--text-color);
+}
+.container{
+    max-width:1068px;
+    margin:auto;
+    width: 100%;
+}
+section{
+    padding:4rem 0 3rem;
+}
+
+#cart-icon{
+    font-size:1.8rem;
+    cursor:pointer;
+}
+/* cart */
+.cart{
+    position:fixed;
+    top:0;
+    right:0;
+    width:350px;
+    min-height:100vh;
+    padding:20px;
+    background:var(--bg-color);
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition:0.3s;
+}
+.cart.active{
+    right:0;
+}
+.cart-title{
+    text-align:center; 
+    font-size:1.5rem;
+    font-weight:600;
+    margin-top: 2rem ;
+}
+.cart-box{
+    display:grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items:center;
+    gap:1rem;
+    margin-top:1rem;
+}
+.cart-img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    padding:10px
+}
+.detail-box{
+    display:grid;
+    row-gap:0.5rem;
+}
+.cart-product-title{
+    font-size:1rem;
+    text-transform:uppercase;
+}
+.cart-price{
+    font-weight:500;
+}
+.cart-quantity{
+    border:1px solid var(--text-color);
+    outline-color: var(--main-color);
+    width:2.4rem;
+    text-align:center;
+    font-size: 1rem;
+}
+.cart-remove{
+    font-size:24px;
+    color:var(--main-color);
+    cursor:pointer;
+}
+.total{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:1.5rem;
+    border-top: 1px solid var(--text-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left:0.5rem;
+}
+.btn-buy{
+    display:flex;
+    margin:1.5rem auto 0 auto;
+    padding:12px 20px;
+    border:none;
+    background:var(--main-color);
+    color:var(--bg-color);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor:pointer;
+}
+.btn-buy:hover{
+    background:var(--text-color);
+}
+#close-cart{
+    position:absolute;
+    top:1rem;
+    right:0.8rem;
+    font-size:2rem;
+    color:var(--text-color);
+    cursor:pointer;
+}
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align:center;
+    margin-left: 1.5rem;
+    margin-bottom: 20px;
+}
+.shop{
+    margin-top:2rem;
+    
+} 
+.shop-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    gap:3.2rem;
+
+}
+.product-box{
+    position:relative;
+    height: auto;
+    
+}
+.product-box:hover{
+    padding:30px;
+    border:5px solid var(--text-color);
+    transition:0.4s;
+}
+.product-box .star img{
+    width: 20px;
+    height:auto;
+}
+.product-img{
+    width:85%;
+    height:60%;
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform:uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 500;
+    color: black;
+}
+
+
+.add-cart{
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: var(--text-color);
+    color:var(--bg-color);
+    padding:10px;
+    cursor:pointer;
+}
+.add-cart:hover{
+    background:hsl(132, 32%, 17)
+
+}
+/*------ footer section------- */
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+  }
+  .footer div{
+    text-align: center;
+  }
+ .col-2{
+    flex-grow: 2;
+ }
+ .footer div h3{
+    font-weight: 300;
+    margin-bottom:30px;
+    letter-spacing: 1px;
+ }
+ .col-1 a{
+    display: block;
+    text-decoration: none;
+    color:#efefef;
+    margin-bottom:10px;
+ }
+ form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline:none;
+    border: none;
+ }
+ form button{
+    background:transparent;
+    border: 2px solid #fff;
+    color:#fff;
+    border-radius: 30px;
+    padding:10px 30px;
+    font-size: 15px;
+
+ /* -------Footer starts----- */
+ 
+ }
+ .footer{
+   margin-top: 150px;
+   width: 100%;
+   padding: 100px 15%;
+   background: #333;
+   color: #efefef;
+   display: flex;
+ }
+ .footer div{
+   text-align: center;
+ }
+.col-2{
+   flex-grow: 2;
+}
+.footer div h3{
+   font-weight: 300;
+   margin-bottom:30px;
+   letter-spacing: 1px;
+}
+.col-1 a{
+   display: block;
+   text-decoration: none;
+   color:#efefef;
+   margin-bottom:10px;
+}
+form input{
+   width: 400px;
+   height: 45px;
+   border-radius: 4px;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 40px;
+   outline:none;
+   border: none;
+}
+form button{
+   background:transparent;
+   border: 2px solid #fff;
+   color:#fff;
+   border-radius: 30px;
+   padding:10px 30px;
+   font-size: 15px;
+
+}
+.icons{
+    width: 25%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
