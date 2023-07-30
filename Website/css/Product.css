@@ -229,6 +229,13 @@ section{
 } 
 .shop-content{
     display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,auto));
+    gap:3.2rem;
+    width:74%;
+    margin:0 auto;
+}
+.shop-content1{
+    display:grid;
     grid-template-columns: repeat(auto-fit, minmax(220px,auto));
     gap:3.2rem;
 
